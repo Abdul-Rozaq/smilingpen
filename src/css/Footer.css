@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid;
+  padding: 30px 5%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer img {
+  width: 60px;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: x-small;
+}
+.footer__icons {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  font-size: 16px !important;
+}

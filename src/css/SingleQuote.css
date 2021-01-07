@@ -1,0 +1,54 @@
+.singleQuote__header {
+  padding: 10% 5%;
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.singleQuote__content {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px solid;
+}
+
+.singleQuote__img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.singleQuote__date {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.singleQuote__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.singleQuote__text {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .singleQuote__header {
+    font-size: 1.4rem;
+  }
+
+  .singleQuote__date {
+    font-size: 16px;
+  }
+
+  .singleQuote__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .singleQuote__img {
+    width: 70%;
+    /* height: 400px; */
+  }
+}

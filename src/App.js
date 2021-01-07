@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router-dom";
+import Footer from "./Comp/Footer";
+import Home from "./pages/Home";
+import QuotesPage from "./pages/QuotesPage";
+import SingleQuote from "./pages/SingleQuote";
+import GalleryPage from "./pages/GalleryPage";
+
+// category
+// title
+// image
+// date
+// Array of paragraphs
+// comment collection
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/quote/:name/:id" component={SingleQuote} />
+        <Route path="/quote/:name" exact component={QuotesPage} />
+        <Route path="/:name" component={GalleryPage} />
+        <Route path="/" exact component={Home} />
+      </Switch>
+      <Footer />
     </div>
   );
 }

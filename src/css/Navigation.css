@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 5%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navigation__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .navigation__title {
+    font-size: 1.5rem;
+  }
+}

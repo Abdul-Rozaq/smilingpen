@@ -1,0 +1,27 @@
+.quotePage__container {
+  padding: 5%;
+}
+
+@media screen and (min-width: 700px) {
+  .quotePage__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quotePage__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .quotePage__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+}

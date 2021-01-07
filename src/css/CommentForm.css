@@ -1,0 +1,38 @@
+.commentForm {
+  padding: 5%;
+}
+
+.commentForm__header {
+  margin-bottom: 20px;
+}
+
+.commentForm__title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.commentForm input {
+  margin-bottom: 20px;
+}
+
+#comment {
+  padding: 3%;
+  height: 200px;
+  width: 100%;
+  border: 1px solid;
+}
+
+#name,
+#email {
+  padding: 3%;
+  border: none;
+  outline-width: 0;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.commentForm__submit {
+  background-color: transparent;
+  outline-width: 0;
+  padding: 5px 30px;
+}

@@ -1,0 +1,51 @@
+.quote {
+  margin-bottom: 50px;
+}
+
+.quote__imgbox {
+  margin-bottom: 10px;
+}
+
+.quote__img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.quote__category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.quote__comment,
+.quote__date,
+.quote__category > span {
+  font-size: 12px;
+}
+
+.quote__title {
+  font-size: 1.6rem;
+}
+
+.quote__share {
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 320px) {
+  .quote__title {
+    font-size: 1.2rem;
+  }
+
+  .quote__date {
+    font-size: xx-small;
+    font-style: italic;
+  }
+
+  .quote__category > span,
+  .quote__comment {
+    font-size: xx-small;
+  }
+}

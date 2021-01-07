@@ -1,0 +1,27 @@
+.imageGrid {
+  padding: 3% 5%;
+  margin-top: 30px;
+}
+
+.imageGrid > h4 {
+  text-align: center;
+}
+
+.imageGrid > hr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
