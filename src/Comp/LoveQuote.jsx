@@ -5,7 +5,7 @@ import Quote from './Quote'
 const LoveQuote = ({ data }) => {
     return (
         <div className="container">
-            <h3>New Love Quotes</h3>
+            <h3 className="container__title">Love Quotes</h3>
             <hr />
             <div className="container__content">
                 <Quote data={data} category="love"  />

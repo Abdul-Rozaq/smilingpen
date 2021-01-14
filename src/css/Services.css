@@ -1,27 +1,35 @@
 .service {
-  height: 150px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.service > div {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
 .service h3 {
-  background-color: #d3d3d3;
-  padding: 5px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service p {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
   .services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }

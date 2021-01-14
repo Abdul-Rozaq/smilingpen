@@ -14,6 +14,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.links {
+  text-decoration: none;
+  color: initial;
+}
+
 .container {
   margin-top: 40px;
   padding: 3% 5%;
@@ -21,10 +26,6 @@ body {
 
 .container .quote {
   margin-bottom: 10px !important;
-}
-
-.container > h3 {
-  text-align: center;
 }
 
 .container hr {
@@ -51,4 +52,41 @@ body {
   margin-top: 10px;
   outline-width: 0;
   border-radius: 5px;
+}
+
+.container__title {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 400px) {
+  .container__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .container__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
 }

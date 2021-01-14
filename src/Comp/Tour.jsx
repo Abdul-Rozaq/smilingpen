@@ -6,7 +6,7 @@ const Tour = () => {
     return (
         <div className="tour">
             <div className="tour__header">
-                <h3>Latest World tour</h3>
+                <h3 className="container__title">World tour</h3>
             </div>
 
             <div className="tour__last">

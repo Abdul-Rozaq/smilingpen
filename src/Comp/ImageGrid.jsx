@@ -3,10 +3,10 @@ import anchor from "../img/anchor.jpg";
 import "../css/ImageGrid.css";
 import { Link } from 'react-router-dom';
 
-const ImageGrid = ({ title }) => {
+const ImageGrid = ({ title }) => { 
     return (
         <div className="imageGrid">
-            <h4>{title}</h4>
+            <h3 className="container__title">{title}</h3>
             <hr />
             <div className="images">
                 <div className="img-box">

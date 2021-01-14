@@ -5,7 +5,7 @@ import Quote from "./Quote";
 const MotivationalQuote = ({ data }) => {
     return (
         <div className="container">
-            <h3>New Motivational Quotes</h3>
+            <h3 className="container__title">Motivational Quotes</h3>
             <hr />
             <div className="container__content">
                 <Quote data={data} category="motivation"  />

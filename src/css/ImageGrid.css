@@ -16,12 +16,48 @@
 }
 
 .images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10px;
+  margin: 20px auto;
+}
+
+.img-box {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /* padding controls height, will always be perfectly square regardless of width */
+  position: relative;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
 .img-box img {
-  width: 100%;
-  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
 }
