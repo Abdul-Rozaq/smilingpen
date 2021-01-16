@@ -9,11 +9,24 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 
 const Home = () => {
-  const [docs, setDocs] = useState([]);
+  const [facts, setFacts] = useState([]);
+  const [fashion, setFashion] = useState([]);
 
   useEffect(() => {
-      const unsub = db.collection("love").onSnapshot(snapshot => {
-          setDocs(
+      const unsub = db.collection("fact").onSnapshot(snapshot => {
+          setFacts(
+              snapshot.docs.map((doc) => ({
+                  id: doc.id,
+                  data: doc.data(),
+              }))
+          )
+      })
+      return () => unsub();
+  }, [])
+  
+  useEffect(() => {
+      const unsub = db.collection("fashion").onSnapshot(snapshot => {
+          setFashion(
               snapshot.docs.map((doc) => ({
                   id: doc.id,
                   data: doc.data(),
@@ -23,14 +36,15 @@ const Home = () => {
       return () => unsub();
   }, [])
 
+
     return (
         <div>
           <Header />
-          <MotivationalQuote data={docs} />
-          <ImageGrid title="Fact Wednesday" />
-          <LoveQuote  data={docs} />
+          <MotivationalQuote />
+          <ImageGrid title="Fact Wednesday" data={facts} />
+          <LoveQuote />
           <Tour />
-          <ImageGrid title="Fashion Xclusive" />
+          <ImageGrid title="Fashion Xclusive" data={fashion} />
         </div>
     )
 }

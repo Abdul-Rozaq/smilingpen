@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Quote = ({ data, category }) => {
     
-    return (
+    return ( 
         <>
         { data && data.map(({id, data}) => (
             <div className="quote" key={id}>
                 <div className="quote__imgbox">
-                    <Link to="/quote/love/1">
+                    <Link to={`/${category}/${id}`}>
                         <img src={data.image} alt="quote" className="quote__img"/>
                     </Link>
                 </div>

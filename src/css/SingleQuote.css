@@ -1,8 +1,12 @@
 .singleQuote__header {
-  padding: 10% 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 150px;
   background-color: #f2f2f2;
   margin-bottom: 50px;
   font-style: italic;
+  display: flex;
+  align-items: center;
 }
 
 .singleQuote__content {
@@ -30,6 +34,16 @@
 
 .singleQuote__text {
   margin-bottom: 15px;
+}
+
+.singleQuote__capital {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.singleQuote__capital span {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 500px) {

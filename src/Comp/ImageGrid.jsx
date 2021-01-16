@@ -1,29 +1,20 @@
 import React from 'react';
-import anchor from "../img/anchor.jpg";
-import "../css/ImageGrid.css";
 import { Link } from 'react-router-dom';
+import "../css/ImageGrid.css";
 
-const ImageGrid = ({ title }) => { 
+const ImageGrid = ({ title, data }) => { 
     return (
         <div className="imageGrid">
             <h3 className="container__title">{title}</h3>
             <hr />
             <div className="images">
-                <div className="img-box">
-                    <img src={anchor} alt="imh"/>
-                </div>
-
-                <div className="img-box">
-                    <img src={anchor} alt="imh"/>
-                </div>
-
-                <div className="img-box">
-                    <img src={anchor} alt="imh"/>
-                </div>
-
-                <div className="img-box">
-                    <img src={anchor} alt="imh"/>
-                </div>
+                {
+                    data.map(({id , data}) => (
+                        <div className="img-box" key={id}>
+                            <img src={data.img} alt="imh"/>
+                        </div>
+                    ))
+                }
             </div>
             <div  className="container__btn">
                 <Link to="/fact" >

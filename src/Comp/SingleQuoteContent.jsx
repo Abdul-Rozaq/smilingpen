@@ -1,23 +1,32 @@
 import React from 'react';
-import image from "../img/anchor.jpg";
 import "../css/SingleQuote.css";
 
-const SingleQuoteContent = () => {
+const SingleQuoteContent = ({ quote }) => {
+    // const year = quote.data.timestamp.toDate().getFullYear();
+    // const month = quote.data.timestamp.toDate().getMonth();
+    // const day = quote.data.timestamp.toDate().getDate();
+    // console.log(month);
+
     return (
         <div className="singleQuote__content">
             <div className="singleQuote__imgbbox">
-                <img src={image} alt="quote" className="singleQuote__img"/>
+                <img src={quote?.data?.image} alt="quote" className="singleQuote__img"/>
             </div>
 
-            <p className="singleQuote__date">on 21, Aug 2021</p>
+            <p className="singleQuote__date">{quote?.data?.timestamp.toDate().toDateString()}</p>
             
-            <h3 className="singleQuote__title">Never give up</h3>
+            <h3 className="singleQuote__title">{quote?.data?.title}</h3>
+
+            <h3 className="singleQuote__title">{quote?.data?.country}</h3>
+
+            <p className="singleQuote__capital">Capital: <span>{quote?.data?.capital}</span></p>
             
             <article>
-                <p className="singleQuote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum deserunt voluptas aut. Aliquam numquam, placeat, ipsa accusamus consequatur deserunt qui sunt molestiae hic voluptas dolorem tempore ex error iusto.</p>
-
-                <p className="singleQuote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum deserunt voluptas aut. Aliquam numquam, placeat, ipsa accusamus consequatur deserunt qui sunt molestiae hic voluptas dolorem tempore ex error iusto.</p>
-                
+                {
+                    quote?.data?.article.map((par, i) => (
+                        <p className="singleQuote__text" key={i}>{par}</p>
+                    ))
+                }
             </article>
         </div>
     )

@@ -1,5 +1,8 @@
 .quote {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .quote__imgbox {
@@ -28,6 +31,7 @@
 
 .quote__title {
   font-size: 1.6rem;
+  flex: 1;
 }
 
 .quote__share {

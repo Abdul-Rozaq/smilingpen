@@ -62,7 +62,13 @@
   text-decoration: underline;
   margin-top: 5px;
 }
+
+.tour__oldImg {
+  height: 150px;
+}
+
 .tour__oldImg > img {
   display: block;
   width: 100%;
+  object-fit: contain;
 }

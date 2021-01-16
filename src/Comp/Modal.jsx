@@ -1,5 +1,4 @@
 import React from 'react';
-import image from "../img/anchor.jpg";
 import "../css/Modal.css";
 
 const Modal = ({ setSelectedImg, selectedImg }) => {
