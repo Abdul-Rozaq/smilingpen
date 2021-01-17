@@ -7,6 +7,7 @@ import Tour from '../Comp/Tour';
 import { db } from '../utils/firebase';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [facts, setFacts] = useState([]);
@@ -41,10 +42,24 @@ const Home = () => {
         <div>
           <Header />
           <MotivationalQuote />
-          <ImageGrid title="Fact Wednesday" data={facts} />
+          <div>
+            <ImageGrid title="Fact Wednesday" data={facts} />
+            <div  className="container__btn">
+                <Link to="/gallery/fact" >
+                    <button>View more</button>
+                </Link>
+            </div>
+          </div>
           <LoveQuote />
           <Tour />
-          <ImageGrid title="Fashion Xclusive" data={fashion} />
+          <div>
+            <ImageGrid title="Fashion Xclusive" data={fashion} />
+            <div  className="container__btn">
+                <Link to="/gallery/fashion" >
+                    <button>View more</button>
+                </Link>
+            </div>
+          </div>
         </div>
     )
 }

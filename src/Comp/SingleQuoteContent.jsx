@@ -1,7 +1,9 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import "../css/SingleQuote.css";
 
 const SingleQuoteContent = ({ quote }) => {
+    const { name } = useParams();
     // const year = quote.data.timestamp.toDate().getFullYear();
     // const month = quote.data.timestamp.toDate().getMonth();
     // const day = quote.data.timestamp.toDate().getDate();
@@ -17,9 +19,9 @@ const SingleQuoteContent = ({ quote }) => {
             
             <h3 className="singleQuote__title">{quote?.data?.title}</h3>
 
-            <h3 className="singleQuote__title">{quote?.data?.country}</h3>
+            {name === "tour" && <h3 className="singleQuote__title">{quote?.data?.country}</h3>}
 
-            <p className="singleQuote__capital">Capital: <span>{quote?.data?.capital}</span></p>
+            {name === "tour" && <p className="singleQuote__capital">Capital: <span>{quote?.data?.capital}</span></p>}
             
             <article>
                 {

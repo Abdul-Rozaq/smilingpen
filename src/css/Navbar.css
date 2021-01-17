@@ -33,6 +33,96 @@
   display: none;
 }
 
+.navbar__line {
+  height: 25px;
+  width: 26px;
+  position: relative;
+  cursor: pointer;
+  /* background-color: lightgray; */
+}
+
+.navbar__line-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line:hover .navbar__line-1 {
+  width: 19px;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line-2 {
+  position: absolute;
+  top: 8px;
+  width: 19px;
+  left: 0;
+  height: 1px;
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: black;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line:hover .navbar__line-2 {
+  width: 100%;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line-3 {
+  position: absolute;
+  top: 16px;
+  width: 19px;
+  left: 0;
+  height: 1px;
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: black;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line:hover .navbar__line-3 {
+  width: 100%;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line-4 {
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: black;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
+.navbar__line:hover .navbar__line-4 {
+  width: 19px;
+  transition: width 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    top 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9),
+    transform 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
+}
+
 @media screen and (min-width: 500px) {
   .navbar__pos {
     font-size: 18px;

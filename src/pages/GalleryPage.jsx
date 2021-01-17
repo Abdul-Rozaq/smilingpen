@@ -22,6 +22,7 @@ const GalleryPage = () => {
         })
         return () => unsub();
     }, [name])
+
     
     return (
         <div className="galleryPage">

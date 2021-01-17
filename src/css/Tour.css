@@ -1,6 +1,7 @@
 .tour {
   padding: 3% 5%;
   margin-top: 30px;
+  max-width: 700px;
 }
 
 .tour__header {
@@ -9,9 +10,15 @@
   margin-bottom: 20px;
 }
 
+.tour__img {
+  margin-bottom: 50px;
+}
+
 .tour__img > img {
   width: 100%;
+  height: 200px;
   display: block;
+  object-fit: contain;
 }
 
 .tour__last h4 {
@@ -33,42 +40,72 @@
   font-size: small;
 }
 
-.tour__subheader {
-  text-decoration: underline;
-  margin-top: 20px;
-  font-weight: 600;
+.tour__second {
+  display: none;
 }
 
-.tour__others {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin-top: 20px;
-}
+@media screen and (min-width: 1024px) {
+  .tour {
+    max-width: 100%;
+  }
 
-.tour__old h5 {
-  margin-top: 10px;
-  text-transform: uppercase;
-}
+  .tour__first {
+    padding-right: 80px;
+  }
 
-.tour__old h6,
-.tour__old span {
-  font-size: small;
-}
+  .tour__second {
+    display: block;
+    border: 1px solid #f2f2f2;
+    padding: 5px 20px;
+  }
+  .tour__wrapper {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-gap: 20px;
+  }
 
-.tour__read {
-  font-size: x-small;
-  font-style: italic;
-  text-decoration: underline;
-  margin-top: 5px;
-}
+  .tour__others {
+    display: block;
+  }
 
-.tour__oldImg {
-  height: 150px;
-}
+  .tour__subheader {
+    margin-top: 0;
+  }
 
-.tour__oldImg > img {
-  display: block;
-  width: 100%;
-  object-fit: contain;
+  .tour__subheader {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .tour__others {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tour__old h5 {
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .tour__old h6,
+  .tour__old span {
+    font-size: small;
+  }
+
+  .tour__read {
+    font-size: x-small;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 5px;
+  }
+
+  .tour__oldImg > img {
+    /* display: block; */
+    /* width: 100%; */
+    height: 100px;
+    object-fit: contain;
+  }
 }

@@ -14,6 +14,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+}
+
+.menu {
+  cursor: pointer;
+}
+
 .links {
   text-decoration: none;
   color: initial;
@@ -29,8 +51,8 @@ body {
 }
 
 .container hr {
-  width: 20%;
-  margin: 10px auto 0;
+  /* width: 20%; */
+  margin: 10px auto 50px;
 }
 
 .container__content {

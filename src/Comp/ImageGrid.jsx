@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "../css/ImageGrid.css";
 
 const ImageGrid = ({ title, data }) => { 
     return (
-        <div className="imageGrid">
+        <div className="imageGrid container">
             <h3 className="container__title">{title}</h3>
             <hr />
             <div className="images">
@@ -15,11 +14,6 @@ const ImageGrid = ({ title, data }) => {
                         </div>
                     ))
                 }
-            </div>
-            <div  className="container__btn">
-                <Link to="/fact" >
-                    <button>View more</button>
-                </Link>
             </div>
         </div>
     )

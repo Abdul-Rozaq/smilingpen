@@ -1,0 +1,20 @@
+.nav ul li:first-child {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav ul li > .links {
+  display: block;
+  font-size: 13px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav ul li img {
+  height: 50px;
+  object-fit: contain;
+}

@@ -21,10 +21,10 @@ const QuotesPage = () => {
         return () => unsub();
     }, [name])
 
-    console.log(name); 
 
     return (
         <div className="quotePage">
+            { name && name === "tour" && <Navigation title="World Tour" />}
             { name && name === "love" && <Navigation title="Love Quote" />}
             { name && name === "motivation" && <Navigation title="Motivational Quote" />}
             

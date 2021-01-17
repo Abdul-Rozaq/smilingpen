@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/service/:name" component={ServicePage} />
+        <Route path="/gallery/:name" component={GalleryPage} />
         <Route path="/:name/:id" component={SingleQuote} />
         <Route path="/:name" exact component={QuotesPage} />
-        <Route path="/:name" component={GalleryPage} />
         <Route path="/" exact component={Home} />
       </Switch>
       <Footer />

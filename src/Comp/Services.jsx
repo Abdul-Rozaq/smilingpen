@@ -18,8 +18,8 @@ const Services = () => {
     return (
         <div className="services">
             {
-                data.map(serv => (
-                    <Link to={serv.link} className="links">
+                data.map((serv, i) => (
+                    <Link to={serv.link} className="links" key={i}>
                         <div className="service" style={{ backgroundImage: `url(${serv.bg})`}}>
                             <div>
                                 <h3 className="service__title">{serv.title}</h3>

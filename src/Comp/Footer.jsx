@@ -1,16 +1,16 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram } from "@material-ui/icons";
+// import { Facebook, Twitter, Instagram } from "@material-ui/icons";
 import logo from "../img/smilingpenLogo.jpeg";
 import "../css/Footer.css";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer__icons">
+            {/* <div className="footer__icons">
                 <Facebook className="footer__icon" />
                 <Twitter className="footer__icon" />
                 <Instagram className="footer__icon" />
-            </div>
+            </div> */}
 
             <img src={logo} alt="logo"/>
 

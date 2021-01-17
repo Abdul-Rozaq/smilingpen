@@ -7,13 +7,13 @@
   text-align: center;
 }
 
-.imageGrid > hr {
+/* .imageGrid > hr {
   width: 20%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 30px;
-}
+} */
 
 .images {
   margin: 20px auto;
