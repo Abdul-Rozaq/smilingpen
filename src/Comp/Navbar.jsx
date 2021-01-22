@@ -16,7 +16,6 @@ const Navbar = () => {
         <>
             <div className='navbar'>
                 <div className="navbar__menu">
-                    {/* <Menu className='menu' onClick={() => setOpen(true)} /> */}
                     <div className="navbar__line" onClick={() => setOpen(true)}>
                         <span className="navbar__line-1"></span>
                         <span className="navbar__line-2"></span>

@@ -1,0 +1,13 @@
+.adminHeroLink {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.adminHeroLink h3 {
+  font-size: 18px;
+}
+
+.adminHeroLink p {
+  font-size: 13px;
+}

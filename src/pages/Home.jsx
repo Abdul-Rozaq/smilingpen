@@ -8,6 +8,7 @@ import { db } from '../utils/firebase';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Comp/Footer';
 
 const Home = () => {
   const [facts, setFacts] = useState([]);
@@ -60,6 +61,7 @@ const Home = () => {
                 </Link>
             </div>
           </div>
+          <Footer />
         </div>
     )
 }

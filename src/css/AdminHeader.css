@@ -1,0 +1,11 @@
+.adminHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  border-bottom: 1px solid;
+}
+
+.adminHeader p {
+  font-size: 14px;
+}

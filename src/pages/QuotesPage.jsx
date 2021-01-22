@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import Footer from '../Comp/Footer';
 import Navigation from '../Comp/Navigation'
 import Quote from '../Comp/Quote';
 import "../css/QuotePage.css";
@@ -31,6 +32,7 @@ const QuotesPage = () => {
             <div className="quotePage__container">
                 {docs && <Quote data={docs} category={name} />}
             </div>
+            <Footer />
         </div>
     )
 }

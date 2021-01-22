@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import Footer from '../Comp/Footer'
 import Gallery from '../Comp/Gallery'
 import Modal from '../Comp/Modal'
 import Navigation from '../Comp/Navigation'
@@ -25,6 +26,7 @@ const GalleryPage = () => {
 
     
     return (
+        <>
         <div className="galleryPage">
             { name && name === "fact" && <Navigation title="Fact Wednesday" />}
             { name && name === "fashion" && <Navigation title="Fashion Exclusive" />}
@@ -34,6 +36,8 @@ const GalleryPage = () => {
                 selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
             }
         </div>
+        <Footer />
+        </>
     )
 }
 

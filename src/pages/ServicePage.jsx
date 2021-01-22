@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Navbar from '../Comp/Navbar';
 import { writer, poet, anchor, content, counseling } from '../utils/data';
 import "../css/Service.css";
+import Footer from '../Comp/Footer';
 
 const ServicePage = () => {
     const {name } = useParams();
@@ -35,6 +36,7 @@ const ServicePage = () => {
                 { name === "counseling" && counseling }
                 { name === "event-anchor" && anchor }
             </div>
+            <Footer />
         </div>
     )
 }

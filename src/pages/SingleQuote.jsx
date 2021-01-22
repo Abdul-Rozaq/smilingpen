@@ -6,6 +6,7 @@ import Comment from '../Comp/Comment';
 import CommentForm from '../Comp/CommentForm';
 import { useParams } from 'react-router-dom';
 import { db } from "../utils/firebase";
+import Footer from '../Comp/Footer';
 
 const SingleQuote = () => {
     const [quote, setQuote] = useState({});
@@ -41,6 +42,8 @@ const SingleQuote = () => {
             <Comment />
 
             <CommentForm />
+
+            <Footer />
         </div>
     )
 }

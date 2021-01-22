@@ -18,3 +18,15 @@
   height: 50px;
   object-fit: contain;
 }
+
+.newpost {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.newpost button {
+  padding: 20px 60px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+}

@@ -1,0 +1,30 @@
+.notification {
+  border: 1px solid;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.notification__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.notification__header p {
+  font-size: 13px;
+  text-align: center;
+}
+/* 
+.notification__type {
+  border: 1px solid;
+  padding: 5px;
+  background-color: orangered;
+  color: white;
+  border-radius: 7px;
+} */
+
+.comment__icon {
+  color: orangered;
+}
