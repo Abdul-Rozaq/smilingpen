@@ -1,0 +1,49 @@
+.adminQuote {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.adminQuote__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.adminQuote__header p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.adminQuote img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.adminQuote__info {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.adminQuote__info > p {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.adminQuote__info h5 {
+  font-size: 22px;
+}
+
+.adminQuote__comments span {
+  font-weight: 800;
+}
+
+.adminQuote__comments p {
+  font-size: 16px;
+}

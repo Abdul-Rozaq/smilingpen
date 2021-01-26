@@ -1,0 +1,28 @@
+.adminModal {
+  transition: all 2s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.adminModal ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  border-radius: 12px;
+  width: 60vw;
+}
+
+.adminModal p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid;
+}

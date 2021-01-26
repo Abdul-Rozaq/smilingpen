@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import AdminHeader from '../Comp/AdminHeader';
 import AdminHero from '../Comp/AdminHero';
 import AdminNotifications from '../Comp/AdminNotifications';
+import AdminQuotesPage from '../Comp/AdminQuotesPage';
 import "../css/Admin.css";
 
 const Admin = () => {
@@ -17,6 +18,11 @@ const Admin = () => {
                         <AdminHero />
                         <AdminNotifications />
                     </>
+                )
+            }
+            {
+                name && (
+                    <AdminQuotesPage />
                 )
             }
         </div>

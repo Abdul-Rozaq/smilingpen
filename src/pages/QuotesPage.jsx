@@ -31,7 +31,7 @@ const QuotesPage = () => {
             
             <div className="quotePage__container">
                 {docs && <Quote data={docs} category={name} />}
-            </div>
+            </div> 
             <Footer />
         </div>
     )
