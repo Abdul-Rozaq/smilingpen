@@ -30,7 +30,6 @@ const counseling = (
       SmilingPen.
     </p>
     <p>Try him today by booking a session with him.</p>
-    <p>For more information, send an email to Smilingpen04@gmail.com</p>
   </article>
 );
 
@@ -50,7 +49,6 @@ const writer = (
       across all genres of writing. He is also a staunch editor and a proof
       reader.
     </p>
-    <p>For any inquiry, send us a mail @smilingpen04@gmail.com.</p>
   </article>
 );
 
@@ -73,9 +71,6 @@ const poet = (
     <p>Every moment that passes is a motivation of inking another poem.</p>
     <p>Bless your events with spoken word artist like SmilingPen.</p>
     <p>Send a divine poem from SmilingPen asa gift to your loved ones.</p>
-    <p>
-      For more information or inquiry, send an email to Smilingpen04@gmail.com.
-    </p>
   </article>
 );
 
@@ -92,9 +87,6 @@ const content = (
       provides contents that has never been used before..
     </p>
     <p>He is a seasoned content creator.</p>
-    <p>
-      For more information or inquiry, send an email to Smilingpen04@gmail.com
-    </p>
   </article>
 );
 
@@ -112,9 +104,6 @@ const anchor = (
       Ceremonies, events, programs, occasions or even red carpets, make sure you
       book SmilingPen and see how everyone who attends your program keeps
       talking about it for generations to come.
-    </p>
-    <p>
-      For more information or inquiry, send an email to Smilingpen04@gmail.com
     </p>
   </article>
 );

@@ -1,0 +1,21 @@
+.adminWotd {
+  margin-top: 50px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adminWotd > div,
+.adminWotd > div > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminWotd img {
+  width: 100%;
+  object-fit: contain;
+}

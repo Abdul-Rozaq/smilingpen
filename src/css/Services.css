@@ -14,10 +14,12 @@
   color: white;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 22px;
 }
 
 .service p {
   color: white;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {

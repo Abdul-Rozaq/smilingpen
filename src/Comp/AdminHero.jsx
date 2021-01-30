@@ -2,7 +2,7 @@ import React from 'react'
 import AdminHeroLink from './AdminHeroLink';
 import "../css/AdminHero.css";
 
-const AdminHero = () => {
+const AdminHero = () => { 
     return (
         <div className="adminHero">
             <AdminHeroLink title="Motivational Quotes" count="20" link="/admin/motivation" />

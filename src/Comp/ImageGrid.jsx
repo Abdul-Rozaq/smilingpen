@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/ImageGrid.css";
 
 const ImageGrid = ({ title, data }) => { 
+    
     return (
         <div className="imageGrid container">
             <h3 className="container__title">{title}</h3>

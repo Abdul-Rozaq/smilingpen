@@ -3,7 +3,7 @@ import { ArrowForwardIos } from '@material-ui/icons';
 import smilingpen from "../img/smilingpen.png";
 import "../css/Hero.css";
 
-const Hero = () => {
+const Hero = () => { 
     return (
         <div className="hero">
           <div className="hero__textbox">

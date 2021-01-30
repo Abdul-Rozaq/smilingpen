@@ -1,9 +1,9 @@
 .hero {
-  padding: 10% 5%;
+  padding: 25px 5% 60px;
 }
 
 .hero__textbox > h1 {
-  font-size: 25px;
+  font-size: 2.2rem;
 }
 
 .hero__textbox p {
@@ -28,13 +28,45 @@
 }
 
 @media screen and (min-width: 410px) {
+  /* .hero__imgbox {
+    display: block;
+    text-align: center;
+  } */
+
+  /* .hero__txt {
+    display: none;
+  } */
+
+  /* .hero__img {
+    width: 80%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  } */
+
+  /* .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
+
+  /* .hero__textbox {
+    padding-right: 30px;
+  } */
+}
+
+@media screen and (min-width: 768px) {
   .hero__imgbox {
     display: block;
     text-align: center;
   }
 
   .hero__txt {
-    display: none;
+    display: block;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .hero__img {
@@ -44,18 +76,7 @@
     object-fit: contain;
   }
 
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .hero__textbox {
     padding-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__txt {
-    display: block;
   }
 }

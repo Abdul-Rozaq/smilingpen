@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Comp/Footer';
+import WOTD from '../Comp/WOTD';
 
 const Home = () => {
   const [facts, setFacts] = useState([]);
@@ -42,6 +43,7 @@ const Home = () => {
     return (
         <div>
           <Header />
+          <WOTD />
           <MotivationalQuote />
           <div>
             <ImageGrid title="Fact Wednesday" data={facts} />

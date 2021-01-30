@@ -14,7 +14,7 @@ const trunc = (str, length) => {
     return str.slice(0, length) + " ...";
 }
 
-const Services = () => {
+const Services = () => { 
     return (
         <div className="services">
             {

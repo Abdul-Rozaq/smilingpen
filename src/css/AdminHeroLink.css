@@ -2,6 +2,7 @@
   border: 1px solid;
   padding: 10px;
   border-radius: 5px;
+  height: 100%;
 }
 
 .adminHeroLink h3 {
@@ -9,5 +10,5 @@
 }
 
 .adminHeroLink p {
-  font-size: 13px;
+  font-size: 15px;
 }

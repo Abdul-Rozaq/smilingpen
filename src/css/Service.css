@@ -1,26 +1,53 @@
+.servicePage__links {
+  padding: 5%;
+}
+
 .servicePage__links > div {
   width: fit-content;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
   margin: 20px auto 0;
 }
 
 .servicePage__links p {
-  font-size: 10px;
+  font-size: 20px;
   padding: 4px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .servicePage__content {
-  background-color: #f2f2f2;
-  padding: 3%;
+  padding: 5%;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
 }
 
+.servicePage__content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.servicePage__content h2 {
+  font-size: 1.9rem;
+  margin-top: 30px;
+}
+
 .servicePage__content p {
   margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.servicePage__content div:last-child {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.servicePage__content h6 {
+  font-size: 1.5rem;
 }
 
 .active {
@@ -29,7 +56,7 @@
   border-top-right-radius: 4px;
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   .servicePage__links p {
     font-size: 12px;
   }
@@ -66,4 +93,4 @@
     font-size: 18px;
     padding: 15px;
   }
-}
+} */

@@ -22,16 +22,16 @@ const AdminNav = ({ open, closeMenu }) => {
                         <Link onClick={closeMenu} className="links" to="/admin/love" >Love quotes</Link>
                     </li>
                     <li>
-                        <Link onClick={closeMenu} className="links" to="/admin/gallery/fact" >Fact wednesday</Link>
+                        <Link onClick={closeMenu} className="links" to="/admin/fact" >Fact wednesday</Link>
                     </li>
                     <li>
                         <Link onClick={closeMenu} className="links" to="/admin/" >Language session</Link>
                     </li>
                     <li>
-                        <Link onClick={closeMenu} className="links" to="/admin/gallery/fashion" >Fashion exclusive</Link>
+                        <Link onClick={closeMenu} className="links" to="/admin/fashion" >Fashion exclusive</Link>
                     </li>
                     <li>
-                        <Link onClick={closeMenu} className="links" to="/admin/" >Word of the day</Link>
+                        <Link onClick={closeMenu} className="links" to="/admin/word-of-the-day" >Word of the day</Link>
                     </li>
                     <li>
                         <Link onClick={closeMenu} className="links" to="/admin/tour" >World tour</Link>
