@@ -7,7 +7,7 @@
 }
 
 .navbar__logo {
-  height: 65px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -39,6 +39,16 @@
   position: relative;
   cursor: pointer;
   /* background-color: lightgray; */
+}
+
+.navbar__nav {
+  /* border: 1px solid; */
+  display: none;
+}
+
+.navbar__navlinks {
+  text-align: center;
+  margin-left: 20px;
 }
 
 .navbar__line-1 {
@@ -157,5 +167,33 @@
   .navbar__pos {
     display: none;
     font-size: xx-small;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar__posLg {
+    display: block;
+    text-decoration: underline;
+  }
+
+  .navbar__pos {
+    display: none;
+    font-size: xx-small;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .navbar__navlinks {
+    margin-left: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { AddCircleOutline } from "@material-ui/icons";
 import AdminGallery from './AdminGallery';
+import UploadForm from './UploadImage/UploadForm';
 
 const AdminGalleryPage = () => {
     const {name} = useParams();
@@ -11,7 +11,7 @@ const AdminGalleryPage = () => {
             <div className="adminGallery__header">
                 { name === "fact" && (<h1>Fact Wednesday</h1>)}
                 { name === "fashion" && (<h1>Fashion Exclusive</h1>)}
-                <AddCircleOutline className="adminGallery__add" />
+                <UploadForm />
             </div>
             
             <div className="adminGallery__content">

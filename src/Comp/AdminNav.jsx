@@ -1,9 +1,7 @@
 import React from 'react';
 import CheeseBurgerMenu from "cheeseburger-menu";
 import { Link } from 'react-router-dom';
-import logo from "../img/smilingpenLogo.jpeg"
-import { Button } from '@material-ui/core';
-
+import logo from "../img/smilingpenLogo.jpeg";
 
 const AdminNav = ({ open, closeMenu }) => {
     return (

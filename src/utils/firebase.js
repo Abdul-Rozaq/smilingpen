@@ -9,7 +9,8 @@ const firebaseApp = firebase.initializeApp({
   appId: "1:322624356209:web:a9b21581c064557cf500d0",
 });
 
-const db = firebaseApp.firestore();
 const storage = firebaseApp.storage();
+const db = firebaseApp.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { db, storage };
+export { db, storage, timestamp };

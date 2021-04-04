@@ -8,15 +8,17 @@
 
 .hero__textbox p {
   margin-top: 10px;
+  font-size: 17px;
+  padding-right: 5px;
 }
 
 .hero__btn {
   font-size: 14px;
   padding: 10px 25px;
-  margin-top: 15px;
+  margin-top: 20px;
   border: none;
   outline-width: 0;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .hero__icon {
@@ -25,33 +27,6 @@
 
 .hero__imgbox {
   display: none;
-}
-
-@media screen and (min-width: 410px) {
-  /* .hero__imgbox {
-    display: block;
-    text-align: center;
-  } */
-
-  /* .hero__txt {
-    display: none;
-  } */
-
-  /* .hero__img {
-    width: 80%;
-    height: 100%;
-    max-height: 300px;
-    object-fit: contain;
-  } */
-
-  /* .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
-
-  /* .hero__textbox {
-    padding-right: 30px;
-  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -66,7 +41,7 @@
 
   .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 1fr;
   }
 
   .hero__img {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ModeComment, ModeCommentOutlined, Stars, StarsOutlined } from "@material-ui/icons";
+// import { ModeComment, ModeCommentOutlined, Stars, StarsOutlined } from "@material-ui/icons";
+import { Stars } from "@material-ui/icons";
 import "../css/Notification.css";
 
 const Notification = () => {

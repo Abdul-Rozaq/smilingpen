@@ -1,5 +1,5 @@
 import React from 'react';
-import { Share, ThumbDownAltOutlined, ThumbUpOutlined, MoreHoriz} from "@material-ui/icons";
+import { Share, ThumbDownAltOutlined, ThumbUpOutlined } from "@material-ui/icons";
 import "../css/Gallery.css";
 
 const Gallery = ({ data }) => {

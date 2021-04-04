@@ -7,12 +7,9 @@ import "../css/Header.css";
 const Header = () => {
     return (
         <div className='header'>
-            {/* NAVIGATION  */}
             <Navbar />
-           {/* BANNER */}
-           <Hero />
-           {/* WHAT I DO */}
-           <Services />
+            <Hero />
+            <Services />
         </div>
     )
 }

@@ -3,9 +3,9 @@ import "../css/WOTD.css";
 import delve from "../img/delve.jpeg";
 
 const WOTD = () => {
-    const [def, setDef] = useState(false);
+    const [def, setDef] = useState(true);
     const [examp, setExamp] = useState(false);
-    const [syn, setSyn] = useState(true);
+    const [syn, setSyn] = useState(false);
 
     return (
         <div className="wotd container">

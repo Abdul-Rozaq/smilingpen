@@ -4,7 +4,7 @@ import logo from "../img/smilingpenLogo.jpeg";
 import "../css/Nav.css";
 
 const Nav = ({ closeMenu }) => {
-    return (
+    return ( 
         <div className="nav">
             <ul>
                 <li>

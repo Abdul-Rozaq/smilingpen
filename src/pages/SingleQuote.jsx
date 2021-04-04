@@ -11,7 +11,6 @@ import Footer from '../Comp/Footer';
 const SingleQuote = () => {
     const [quote, setQuote] = useState({});
     const { name, id } = useParams(); 
-    console.log(quote);
 
     useEffect(() => {
         const unsub = db.collection(name).doc(id).onSnapshot(snap => {
